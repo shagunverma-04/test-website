@@ -1,0 +1,43 @@
+.cta-banner {
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=1400&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 2rem;
+}
+
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 22, 12, 0.72);
+}
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.cta-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.cta-text p {
+  color: rgba(255,255,255,0.75);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 700px) {
+  .cta-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}

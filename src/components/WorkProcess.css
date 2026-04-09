@@ -1,0 +1,119 @@
+.work-process {
+  background: #fff;
+  padding: 5rem 0;
+}
+
+.steps-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 130px;
+  max-width: 200px;
+  position: relative;
+}
+
+.step-num {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #FAF8F4;
+  border: 2px solid #C9A96E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #C9A96E;
+  margin-bottom: 1.25rem;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.step-line {
+  position: absolute;
+  top: 26px;
+  left: calc(50% + 26px);
+  right: calc(-50% + 26px);
+  height: 2px;
+  background: linear-gradient(to right, #C9A96E, #EDE5D8);
+  z-index: 0;
+}
+
+.step-body {
+  text-align: center;
+  padding: 0 0.75rem;
+}
+
+.step-body h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #252525;
+  margin-bottom: 0.4rem;
+}
+
+.step-body p {
+  font-size: 0.8rem;
+  color: #888;
+  line-height: 1.5;
+}
+
+.congratulations-box {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: linear-gradient(135deg, #C9A96E 0%, #A07840 100%);
+  border-radius: 12px;
+  padding: 1.75rem 2.25rem;
+  max-width: 480px;
+  margin: 3.5rem auto 0;
+  color: #fff;
+}
+
+.congrats-icon {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.congratulations-box h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.congratulations-box p {
+  font-size: 0.88rem;
+  opacity: 0.85;
+}
+
+@media (max-width: 700px) {
+  .steps-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .step-line {
+    display: none;
+  }
+  .step-item {
+    max-width: 280px;
+  }
+}

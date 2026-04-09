@@ -1,0 +1,55 @@
+.our-partners {
+  background: #fff;
+  padding: 4.5rem 0;
+}
+
+.partners-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem 2.5rem;
+  margin-top: 0.5rem;
+}
+
+.partner-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.partner-item:hover {
+  transform: translateY(-3px);
+}
+
+.partner-logo-box {
+  padding: 1rem 2rem;
+  background: #FAF8F4;
+  border: 1.5px solid #EDE5D8;
+  border-radius: 10px;
+  min-width: 130px;
+  text-align: center;
+  transition: border-color 0.3s, background 0.3s;
+}
+
+.partner-item:hover .partner-logo-box {
+  border-color: #C9A96E;
+  background: #fff;
+}
+
+.partner-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #252525;
+  letter-spacing: 0.02em;
+}
+
+.partner-desc {
+  font-size: 0.73rem;
+  color: #999;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
