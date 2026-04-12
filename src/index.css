@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
 
 #root {
   width: 100%;
@@ -17,15 +17,17 @@
 }
 
 :root {
-  --cream: #FAF8F4;
-  --cream-dark: #F2EDE3;
-  --gold: #C9A96E;
-  --gold-dark: #A07840;
-  --charcoal: #252525;
-  --gray: #666666;
-  --gray-light: #999999;
-  --border: #E5DDD0;
+  --cream: #FAF5EE;
+  --cream-dark: #F0E8DD;
+  --brown: #8B5E3C;
+  --brown-mid: #A0714F;
+  --brown-dark: #5C3A20;
+  --charcoal: #2A1F14;
+  --gray: #6B5E52;
+  --gray-light: #A89880;
+  --border: #E2D5C5;
   --white: #FFFFFF;
+  --olive: #4A5240;
 }
 
 html {
@@ -41,7 +43,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   line-height: 1.25;
 }
 
@@ -52,20 +54,21 @@ h1, h2, h3, h4 {
 }
 
 .section-label {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--brown-mid);
   margin-bottom: 0.75rem;
 }
 
 .section-title {
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
   font-weight: 600;
   color: var(--charcoal);
   text-align: center;
   margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
 }
 
 .section-subtitle {

@@ -33,9 +33,9 @@ export default function Testimonials() {
   return (
     <section className="testimonials" id="testimonials">
       <div className="container">
-        <p className="section-label" style={{ textAlign: 'center' }}>Reviews</p>
-        <h2 className="section-title">Voices of Happy Homeowners</h2>
-        <p className="section-subtitle">Their trust, our inspiration</p>
+        <p className="section-label">Reviews</p>
+        <h2 className="section-title" style={{ textAlign: 'left' }}>Voices of Happy Homeowners</h2>
+        <p className="section-subtitle" style={{ textAlign: 'left' }}>Their trust, our inspiration</p>
 
         <div className="testimonial-card">
           <div className="testimonial-image">

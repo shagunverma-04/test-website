@@ -11,36 +11,55 @@ const steps = [
 export default function WorkProcess() {
   return (
     <section className="work-process">
-      <div className="container">
-        <p className="section-label" style={{ textAlign: 'center' }}>How It Works</p>
-        <h2 className="section-title">Our Work Process</h2>
-        <p className="section-subtitle">Five steps is all it takes to elevate your style of living.</p>
+      <div className="work-process-inner">
 
-        <div className="steps-row">
-          {steps.map((s, i) => (
-            <div className="step-item" key={s.num}>
-              <div className="step-num">{s.num}</div>
-              {i < steps.length - 1 && <div className="step-line" />}
-              <div className="step-body">
-                <h4>{s.title}</h4>
-                <p>{s.desc}</p>
+        {/* Left — room image */}
+        <div className="wp-image-col">
+          <img
+            src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80"
+            alt="Beautiful interior space"
+          />
+        </div>
+
+        {/* Right — steps */}
+        <div className="wp-content-col">
+          <p className="section-label">How It Works</p>
+          <h2 className="section-title" style={{ textAlign: 'left' }}>Our Work Process</h2>
+          <p className="section-subtitle" style={{ textAlign: 'left', marginBottom: '2rem' }}>
+            Five steps is all it takes to elevate your style of living.
+          </p>
+
+          <div className="steps-row">
+            {steps.map((s, i) => (
+              <div className="step-item" key={s.num}>
+                <div className="step-num">{s.num}</div>
+                {i < steps.length - 1 && <div className="step-connector" />}
               </div>
+            ))}
+          </div>
+
+          <div className="steps-labels">
+            {steps.map((s) => (
+              <div className="step-label" key={s.num}>
+                <span>{s.title}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="congratulations-box">
+            <div className="congrats-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22,4 12,14.01 9,11.01"/>
+              </svg>
             </div>
-          ))}
+            <div>
+              <h3>Congratulations</h3>
+              <p>You have done the right choice</p>
+            </div>
+          </div>
         </div>
 
-        <div className="congratulations-box">
-          <div className="congrats-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-              <polyline points="22,4 12,14.01 9,11.01"/>
-            </svg>
-          </div>
-          <div>
-            <h3>Congratulations</h3>
-            <p>You have made the right choice</p>
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -1,6 +1,8 @@
 .our-partners {
-  background: #fff;
+  background: #FAF5EE;
   padding: 4.5rem 0;
+  border-top: 1px solid #E2D5C5;
+  border-bottom: 1px solid #E2D5C5;
 }
 
 .partners-row {
@@ -16,40 +18,35 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
   transition: transform 0.3s;
 }
 
-.partner-item:hover {
-  transform: translateY(-3px);
-}
+.partner-item:hover { transform: translateY(-3px); }
 
 .partner-logo-box {
-  padding: 1rem 2rem;
-  background: #FAF8F4;
-  border: 1.5px solid #EDE5D8;
+  padding: 0.9rem 1.75rem;
+  background: #fff;
+  border: 1.5px solid #E2D5C5;
   border-radius: 10px;
-  min-width: 130px;
+  min-width: 120px;
   text-align: center;
-  transition: border-color 0.3s, background 0.3s;
+  transition: border-color 0.3s;
 }
 
-.partner-item:hover .partner-logo-box {
-  border-color: #C9A96E;
-  background: #fff;
-}
+.partner-item:hover .partner-logo-box { border-color: #8B5E3C; }
 
 .partner-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.05rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
   font-weight: 700;
-  color: #252525;
-  letter-spacing: 0.02em;
+  color: #2A1F14;
+  letter-spacing: 0.03em;
 }
 
 .partner-desc {
-  font-size: 0.73rem;
-  color: #999;
+  font-size: 0.7rem;
+  color: #9A8070;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
 }

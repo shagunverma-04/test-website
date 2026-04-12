@@ -1,5 +1,5 @@
 .our-projects {
-  background: #FAF8F4;
+  background: #fff;
   padding: 5rem 0;
 }
 
@@ -12,46 +12,46 @@
 }
 
 .tab-btn {
-  padding: 0.5rem 1.25rem;
+  padding: 0.45rem 1.15rem;
   border-radius: 50px;
-  border: 1.5px solid #E0D5C5;
+  border: 1.5px solid #E2D5C5;
   background: #fff;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   font-weight: 500;
-  color: #666;
+  color: #6B5040;
   cursor: pointer;
   transition: all 0.25s ease;
   font-family: 'Inter', sans-serif;
 }
 
 .tab-btn:hover {
-  border-color: #C9A96E;
-  color: #C9A96E;
+  border-color: #8B5E3C;
+  color: #8B5E3C;
 }
 
 .tab-btn.active {
-  background: #C9A96E;
-  border-color: #C9A96E;
+  background: #8B5E3C;
+  border-color: #8B5E3C;
   color: #fff;
 }
 
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
+  gap: 1.1rem;
 }
 
 .project-card {
   border-radius: 10px;
   overflow: hidden;
-  background: #fff;
-  border: 1px solid #EDE5D8;
+  background: #FAF5EE;
+  border: 1px solid #E2D5C5;
   transition: all 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 14px 35px rgba(0,0,0,0.09);
+  box-shadow: 0 12px 32px rgba(44,28,12,0.1);
 }
 
 .project-img {
@@ -66,38 +66,29 @@
   transition: transform 0.5s ease;
 }
 
-.project-card:hover .project-img img {
-  transform: scale(1.06);
-}
+.project-card:hover .project-img img { transform: scale(1.06); }
 
 .project-info {
-  padding: 1rem 1.2rem;
+  padding: 0.9rem 1.1rem;
 }
 
 .project-info h4 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 1rem;
   font-weight: 600;
-  color: #252525;
+  color: #2A1F14;
   margin-bottom: 0.2rem;
 }
 
 .project-info span {
-  font-size: 0.78rem;
-  color: #999;
+  font-size: 0.76rem;
+  color: #9A8070;
 }
 
 @media (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 480px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-  .project-tabs {
-    gap: 0.4rem;
-  }
+  .projects-grid { grid-template-columns: 1fr; }
 }

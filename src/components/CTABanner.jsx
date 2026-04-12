@@ -9,7 +9,7 @@ export default function CTABanner() {
           <h2>Let's Design Your Dream Space</h2>
           <p>Book a free consultation and take the first step toward your ideal home.</p>
         </div>
-        <a href="#contact" className="btn-outline-white">Book a Free Consultation</a>
+        <a href="#contact" className="cta-btn">Book a Free Consultation</a>
       </div>
     </section>
   );
