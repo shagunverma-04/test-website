@@ -1,8 +1,13 @@
 .projects-delivered {
-  background: #FAF5EE;
+  background: #FFFFFF;
   padding: 4rem 0;
   border-top: 1px solid #E2D5C5;
   border-bottom: 1px solid #E2D5C5;
+}
+
+/* Override heading font to Inter for this section */
+.projects-delivered .section-title {
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .delivered-logos {
@@ -22,13 +27,15 @@
   transition: transform 0.3s;
 }
 
-.delivered-logo:hover { transform: translateY(-3px); }
+.delivered-logo:hover {
+  transform: translateY(-3px);
+}
 
 .logo-placeholder {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: #fff;
+  background: #FAF5EE;
   border: 2px solid #E2D5C5;
   display: flex;
   align-items: center;
@@ -36,13 +43,15 @@
   transition: border-color 0.3s;
 }
 
-.delivered-logo:hover .logo-placeholder { border-color: #8B5E3C; }
+.delivered-logo:hover .logo-placeholder {
+  border-color: #B58569;
+}
 
 .logo-abbr {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #8B5E3C;
+  color: #B58569;
 }
 
 .logo-name {

@@ -23,7 +23,6 @@ export default function Gallery() {
   return (
     <section className="gallery-section">
       <div className="container">
-        <p className="section-label" style={{ textAlign: 'center' }}>Portfolio</p>
         <h2 className="section-title">Crafting Spaces, Creating Experiences</h2>
         <p className="section-subtitle">Spaces that live, breathe, and inspire</p>
 
