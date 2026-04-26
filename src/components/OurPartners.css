@@ -25,23 +25,17 @@
 .partner-item:hover { transform: translateY(-3px); }
 
 .partner-logo-box {
-  padding: 0.9rem 1.75rem;
-  background: #fff;
-  border: 1.5px solid #E2D5C5;
-  border-radius: 10px;
-  min-width: 120px;
-  text-align: center;
-  transition: border-color 0.3s;
+  width: 140px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.partner-item:hover .partner-logo-box { border-color: #8B5E3C; }
-
-.partner-name {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #2A1F14;
-  letter-spacing: 0.03em;
+.partner-logo-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .partner-desc {

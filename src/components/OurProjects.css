@@ -44,45 +44,37 @@
 .project-card {
   border-radius: 10px;
   overflow: hidden;
-  background: #FAF5EE;
-  border: 1px solid #E2D5C5;
-  transition: all 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(44,28,12,0.1);
-}
-
-.project-img {
+  position: relative;
   aspect-ratio: 4/3;
-  overflow: hidden;
 }
 
-.project-img img {
+.project-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  display: block;
 }
 
-.project-card:hover .project-img img { transform: scale(1.06); }
-
 .project-info {
-  padding: 0.9rem 1.1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 1rem 0.9rem;
+  background: linear-gradient(to top, rgba(20, 12, 4, 0.72) 0%, transparent 100%);
 }
 
 .project-info h4 {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1rem;
   font-weight: 600;
-  color: #2A1F14;
-  margin-bottom: 0.2rem;
+  color: #fff;
+  margin-bottom: 0.15rem;
 }
 
 .project-info span {
-  font-size: 0.76rem;
-  color: #9A8070;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 @media (max-width: 768px) {

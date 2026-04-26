@@ -1,11 +1,16 @@
+import hettichLogo from '../assets/images/image 17.png';
+import hafeleLogo from '../assets/images/image 18.png';
+import ebcoLogo from '../assets/images/image 19.png';
+import asianpaintsLogo from '../assets/images/image 20.png';
+import faberLogo from '../assets/images/image 21.png';
 import './OurPartners.css';
 
 const partners = [
-  { name: 'Hettich', desc: 'German Precision Hardware' },
-  { name: 'HÄFELE', desc: 'Functional Hardware' },
-  { name: 'ebco', desc: 'Furniture Fittings' },
-  { name: 'Asian Paints', desc: 'Premium Paints' },
-  { name: 'FABER', desc: 'Kitchen Appliances' },
+  { name: 'Hettich', desc: 'German Precision Hardware', logo: hettichLogo },
+  { name: 'HÄFELE', desc: 'Functional Hardware', logo: hafeleLogo },
+  { name: 'ebco', desc: 'Furniture Fittings', logo: ebcoLogo },
+  { name: 'Asian Paints', desc: 'Premium Paints', logo: asianpaintsLogo },
+  { name: 'FABER', desc: 'Kitchen Appliances', logo: faberLogo },
 ];
 
 export default function OurPartners() {
@@ -20,7 +25,7 @@ export default function OurPartners() {
           {partners.map((p) => (
             <div className="partner-item" key={p.name}>
               <div className="partner-logo-box">
-                <span className="partner-name">{p.name}</span>
+                <img src={p.logo} alt={p.name} />
               </div>
               <p className="partner-desc">{p.desc}</p>
             </div>
